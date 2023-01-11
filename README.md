@@ -13,7 +13,7 @@ External APIs: Google Maps API, Ipinfo API
 ## Backend
 ### Environment
 Runtime: Node.js  
-External API: Yelp Fusion API, Google Geocoding API
+External APIs: Yelp Fusion API, Google Geocoding API
 
 ### File Description
 ./backend/server.js is the code used to build the server
