@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/searchForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business Search"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/keyword"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:hint="@string/Keyword"
+                android:layout_marginTop="12dp"
+                />
+
+            <EditText
+                android:id="@+id/distance"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:hint="Distance"
+                android:inputType="number"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Category"
+                android:layout_marginTop="12dp"
+                />
+
+            <Spinner
+                android:id="@+id/category"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:hint="@string/Location"
+                android:layout_marginTop="12dp"
+                />
+
+            <CheckBox
+                android:id="@+id/chkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto-detect my location"
+                android:layout_marginTop="12dp"
+                android:buttonTint="#ff66ff"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUBMIT"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"
+                    android:layout_marginLeft="50dp"
+                    />
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLEAR"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/red"
+                    android:layout_marginLeft="80dp"
+
+                    />
+
+                >
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                />
+
+            <TextView
+                android:id="@+id/noBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No results Found!"
+                android:textColor="@color/red"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/myLinear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/black"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

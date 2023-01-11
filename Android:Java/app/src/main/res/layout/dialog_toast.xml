@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/round_toast"
+    >
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/card_toast"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginVertical="10dp"
+       android:layout_marginHorizontal="20dp"
+       app:cardCornerRadius="100dp">
+
+      <!-- add a Image image.png in your Drawable folder -->
+      <ImageView
+          android:id="@+id/iv_toast"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_gravity="center"
+          android:scaleType="fitCenter"
+          android:src="@drawable/yelp_logo"
+          />
+   </androidx.cardview.widget.CardView>
+
+
+   <TextView
+       android:id="@+id/tv_toast"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_marginRight="20dp"
+       android:gravity="center_vertical"
+       android:text="Reservation Booked"
+       android:textColor="@color/black"
+       />
+
+</LinearLayout>
